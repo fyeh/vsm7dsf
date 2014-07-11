@@ -4,6 +4,7 @@ vsm7dsf
 DirectShow Filter for Cisco VSM7
 
 Description
+
   Provides access to streaming video from Cisco Video Surveillance Manager version 7 from Windows DirectShow. 
   
 Pre-Req's
@@ -32,4 +33,4 @@ Project Contents
 
   HelperLib - C# managed library.  Used to integrate the managed Cisco VSM SDK with the unmanaged direct show filter.
   
-  Samples - Samples that use the Filter and 
+  Samples - Samples that use the Filter and Cisco Web Services calls. Also useful as utilities for deploying.
