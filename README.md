@@ -20,8 +20,16 @@ LiveProxy - https://github.com/dhorth/LiveProxy
 Cisco VSM 7 SDK - https://developer.cisco.com/site/networking/security/physical-security/documentation/index.gsp
   Provides libraries used to interface with Cisco VSM 7 Web Services
   
+Directshowlib - http://directshownet.sourceforge.net/
+  .NET access to DirectShow Used by Samples
+  
+Log4net - http://logging.apache.org/log4net/
+  Logging libraries Used by Samples
+  
 Project Contents
 
-  PushSource - The Actual DirectShow Filter
+  PushSource - The Actual DirectShow Filter.
 
   HelperLib - C# managed library.  Used to integrate the managed Cisco VSM SDK with the unmanaged direct show filter.
+  
+  Samples - Samples that use the Filter and 
