@@ -1,0 +1,137 @@
+  HelperLib.ExceptionHelper.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly HelperLib, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly VSOMWebService, Version=0.0.0.0, Culture=neutral, PublicKeyToken=103f983d0c57b4f6: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class HelperLib.CameraSupport: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Cisco.PSBU.VSOMWebService.VsomServices): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    WalkCameras(Action`3): PrivateScope, Public, HideBySig
+Class HelperLib.ExceptionHelper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String usermessageTag : Public, Static
+  Methods:
+    Ignore(Exception): PrivateScope, Public, Static, HideBySig
+    Ignore(Exception, String): PrivateScope, Public, Static, HideBySig
+    HandleException(Exception): PrivateScope, Public, Static, HideBySig
+    HandleException(Exception, String): PrivateScope, Public, Static, HideBySig
+    CriticalException(Exception): PrivateScope, Public, Static, HideBySig
+    CriticalException(Exception, String): PrivateScope, Public, Static, HideBySig
+    GetMessageText(Exception): PrivateScope, Public, Static, HideBySig
+    GetMessageText(Exception, String): PrivateScope, Public, Static, HideBySig
+    GetMessageHtml(Exception, String): PrivateScope, Public, Static, HideBySig
+    UnhandledExpection(UnhandledExceptionEventArgs): PrivateScope, Public, Static, HideBySig
+    GetModules(): PrivateScope, Public, Static, HideBySig
+Class HelperLib.ExceptionHelper+HRESULT: AutoLayout, AnsiClass, Class, NestedPublic, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Check(Int32): PrivateScope, Public, Static, HideBySig, HasSecurity
+Class HelperLib.ProgramSettings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Methods:
+    GetSetting(String): PrivateScope, Public, Static, HideBySig
+    GetSetting(String, String, String): PrivateScope, Public, Static, HideBySig
+    GetSetting(String, String): PrivateScope, Public, Static, HideBySig
+    GetSetting(String, String, String, String): PrivateScope, Public, Static, HideBySig
+    SetSetting(String, String, String): PrivateScope, Public, Static, HideBySig
+    SetSetting(String, String): PrivateScope, Public, Static, HideBySig
+    SetSetting(String, String, String, String): PrivateScope, Public, Static, HideBySig
+Class HelperLib.TraceHelper: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String LogFileName 'get ' : 
+  Methods:
+    Write(LogLevel, String): PrivateScope, Public, Static, HideBySig
+    Initialize(): PrivateScope, Public, Static, HideBySig
+    get_LogFileName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Stop(): PrivateScope, Public, Static, HideBySig
+    WriteDebug(String, Object[]): PrivateScope, Public, Static, HideBySig
+    WriteInfo(String, Object[]): PrivateScope, Public, Static, HideBySig
+    WriteError(String, Object[]): PrivateScope, Public, Static, HideBySig
+    WriteWarning(String, Object[]): PrivateScope, Public, Static, HideBySig
+Struct HelperLib.TraceHelper+LogLevel: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    LogLevel Debug = 0 : Public, Static, Literal, HasDefault
+    LogLevel Warning = 1 : Public, Static, Literal, HasDefault
+    LogLevel Error = 2 : Public, Static, Literal, HasDefault
+    LogLevel Fatal = 3 : Public, Static, Literal, HasDefault
+    LogLevel Info = 4 : Public, Static, Literal, HasDefault
+Class Cisco.PSBU.VSOMWebService.AuthenticationInfo: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    System.String SessionId 'get set' : 
+    System.String HostName 'get set' : 
+    System.String UserName 'get set' : 
+    System.String Domain 'get set' : 
+    System.String Password 'get set' : 
+    Boolean Secure 'get set' : 
+    Boolean Ignore 'get set' : 
+    System.String CertValidationError 'get set' : 
+  Methods:
+    get_SessionId(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_HostName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_UserName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Domain(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Password(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Secure(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Secure(Boolean): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Ignore(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Ignore(Boolean): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CertValidationError(): PrivateScope, Public, Static, HideBySig, SpecialName
+    SetAllAuthParams(String, String, String, String, Boolean, Boolean): PrivateScope, Public, Static, HideBySig
+Class Cisco.PSBU.VSOMWebService.VsomServices: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.String, System.String, Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Cisco.PSBU.VSOMWebService.AuthenticationClient AuthService 'get set' : 
+    Cisco.PSBU.VSOMWebService.LocationMgmtClient LocationService 'get set' : 
+    Cisco.PSBU.VSOMWebService.CameraMgmtClient CameraService 'get set' : 
+    Cisco.PSBU.VSOMWebService.MultiPaneViewMgmtClient MultiPaneService 'get set' : 
+    Cisco.PSBU.VSOMWebService.AlertMgmtClient AlertService 'get set' : 
+    Cisco.PSBU.VSOMWebService.EventMgmtClient EventService 'get set' : 
+    Cisco.PSBU.VSOMWebService.UmsMgmtClient UmsService 'get set' : 
+    Cisco.PSBU.VSOMWebService.DeviceTemplateMgmtClient TemplateService 'get set' : 
+    Cisco.PSBU.VSOMWebService.JobMgmtClient JobService 'get set' : 
+    Cisco.PSBU.VSOMWebService.MapMgmtClient MapService 'get set' : 
+    Cisco.PSBU.VSOMWebService.EncoderMgmtClient EncoderService 'get set' : 
+    Cisco.PSBU.VSOMWebService.DeviceCapabilityMgmtClient DeviceCapabilityService 'get set' : 
+    Cisco.PSBU.VSOMWebService.DeviceHealthMgmtClient DeviceHealthMgmtService 'get set' : 
+  Methods:
+    get_AuthService(): PrivateScope, Public, HideBySig, SpecialName
+    get_LocationService(): PrivateScope, Public, HideBySig, SpecialName
+    get_CameraService(): PrivateScope, Public, HideBySig, SpecialName
+    get_MultiPaneService(): PrivateScope, Public, HideBySig, SpecialName
+    get_AlertService(): PrivateScope, Public, HideBySig, SpecialName
+    get_EventService(): PrivateScope, Public, HideBySig, SpecialName
+    get_UmsService(): PrivateScope, Public, HideBySig, SpecialName
+    get_TemplateService(): PrivateScope, Public, HideBySig, SpecialName
+    get_JobService(): PrivateScope, Public, HideBySig, SpecialName
+    get_MapService(): PrivateScope, Public, HideBySig, SpecialName
+    get_EncoderService(): PrivateScope, Public, HideBySig, SpecialName
+    get_DeviceCapabilityService(): PrivateScope, Public, HideBySig, SpecialName
+    get_DeviceHealthMgmtService(): PrivateScope, Public, HideBySig, SpecialName
+Class Cisco.PSBU.VSOMWebService.baseObject2Ref: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    bO2Ref(baseObject): PrivateScope, Public, Static, HideBySig

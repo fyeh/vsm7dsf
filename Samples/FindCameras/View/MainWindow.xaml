@@ -1,0 +1,225 @@
+﻿<Window x:Class="FindCameras.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding Title}" Height="600" Width="800"
+        Background="DarkSlateGray" Icon="/Images\videocamera.ico">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="booltoviz"/>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="PropLabel" TargetType="Label">
+            <Setter Property="HorizontalContentAlignment" Value="Right"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="85"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="PropText" TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Margin" Value="1.5,0,0,0"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Style.Resources>
+                <Style TargetType="Image">
+                    <Style.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.5" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Style.Resources>
+        </Style>
+        
+    </Window.Resources>
+    <Grid Margin="25">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Background="Azure" BorderBrush="DarkBlue" CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="5" Opacity=".8"/>
+            </Border.Effect>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Server" Grid.Column="0" Grid.Row="0" />
+                    <Label Content="User Name" Grid.Column="0" Grid.Row="1"  />
+                    <Label Content="Password" Grid.Column="0" Grid.Row="2" />
+
+                    <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Server}" Margin="2"/>
+                    <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding UserName}"  Margin="2"/>
+                    <TextBox Grid.Column="1" Grid.Row="2"  Text="{Binding Password}" Margin="2"/>
+                </Grid>
+                <StackPanel Grid.Column="1" Grid.Row="0">
+                    <Button  Margin="10" Width="100" Height="45" Command="{Binding LoadCamerasCommand}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Width="32" Height="32" Margin="4" Source="/FindCameras;component/Images/camera_reload_32.png"/>
+                            <TextBlock Text="Load" VerticalAlignment="Center" FontSize="16"/>
+                        </StackPanel>
+                    </Button>
+                    <ProgressBar IsIndeterminate="True" Margin="5" Height="5" Visibility="{Binding IsLoading, Converter={StaticResource booltoviz}}"/>
+                    <TextBlock Text="{Binding Status}" HorizontalAlignment="Center" Margin="0,-5,0,0" Visibility="{Binding IsLoading, Converter={StaticResource booltoviz}}"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Property Selection -->
+        <Border Grid.Row="1"  Margin="10" BorderBrush="Black" CornerRadius="10" Background="AliceBlue" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="400"/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Camera List -->
+                    <ListBox BorderThickness="0" BorderBrush="Transparent" Background="Transparent"
+                            ItemsSource="{Binding Cameras}" SelectedItem="{Binding SelectedCamera}" Margin="5">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}" FontSize="16"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    
+                    <!-- Export Button -->
+                    <Button Grid.Row="1" Margin="0,10,0,10" HorizontalAlignment="Center" Command="{Binding ExportCommand}">
+                        <TextBlock Text="Export" Margin="3"/>
+                    </Button>
+                </Grid>
+
+                <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" Margin="5" CornerRadius="3">
+                    <Grid  Margin="5"  DataContext="{Binding SelectedCamera}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Thumbnail -->
+                        <Border BorderBrush="Black" Background="Silver" Width="100" Height="100" Margin="10">
+                            <Image Source="{Binding Thumbnail}"  HorizontalAlignment="Center"/>
+                        </Border>
+                        <Border BorderBrush="Black" BorderThickness="0,0,0,1" Margin="-5,0,-5,0" />
+                        <!--<xctk:PropertyGrid SelectedObject="{Binding }" AutoGenerateProperties="True" Grid.Row="1"
+                                               IsReadOnly="True"/>-->
+                        
+                        <!-- Properties -->
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="UID"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding UID, Mode=OneWay}"/>
+                                </StackPanel>
+                                
+                                <!-- Name -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Name"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding Name, Mode=OneWay}"/>
+                                </StackPanel>
+                                
+                                <!-- Host -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Host"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding Host, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- State -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="State"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding State, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- Model -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Model"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding Model, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- Admin State -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Admin State"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding AdminState, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- IP Address -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="IP Address"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding IpAddress, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- Vendor -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Vendor"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding Vendor, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- Token -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Token"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding Token, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- Object Type -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Type"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding ObjectType, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- RTSP Url -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Rtsp Url"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding RtspUrl, Mode=OneWay}"/>
+                                </StackPanel>
+                                <!-- Cisco Url -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Style="{StaticResource PropLabel}" Content="Cisco Url"/>
+                                    <TextBox Style="{StaticResource PropText}" Text="{Binding CiscoUrl, Mode=OneWay}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <!-- Copy URL  -->
+                        <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Margin="0,10,0,0" HorizontalAlignment="Center" Command="{Binding CopyUrlToClipboardCommand}">
+                            <TextBlock Text="Copy URL to Clipboard" Margin="3"/>
+                        </Button>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

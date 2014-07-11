@@ -1,0 +1,16 @@
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\SampleGrabber.csprojResolveAssemblyReference.cache
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\ControlPad.baml
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\DefaultSettings.baml
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\FilterStatus.baml
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\Image.baml
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\SystemStatus.baml
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\ControlPad.g.cs
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\DefaultSettings.g.cs
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\FilterStatus.g.cs
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\Image.g.cs
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\SystemStatus.g.cs
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\Controls\TraceWindow.g.cs
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\SampleGrabber_Content.g.cs
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\SampleGrabber_MarkupCompile.cache
+C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Debug\SampleGrabber_MarkupCompile.lref

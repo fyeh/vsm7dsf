@@ -1,0 +1,5 @@
+rtsp://media-us-2.soundreach.net/slcn_sports.sdp
+ciscosource://10.0.0.22?SessionId=16563917&Width==352Height=240
+ciscosource://ec2-23-22-241-221.compute-1.amazonaws.com?camera=1e15085c-2b8f-46cf-b4dd-e406b87b1f36&User=admin&Password=Admin123&Width=1920&Height=1080
+ciscosource://ec2-75-101-177-49.compute-1.amazonaws.com?camera=1e15085c-2b8f-46cf-b4dd-e406b87b1f36&User=admin&Password=Admin123&Width=1920&Height=1080
+ciscosource://ec2-75-101-177-49.compute-1.amazonaws.com?camera=1e15085c-2b8f-46cf-b4dd-e406b87b1f36&User=admin&Password=Admin123&Width=1920&Height=1080&LogLevel=5
