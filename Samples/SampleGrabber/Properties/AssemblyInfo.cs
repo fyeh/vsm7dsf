@@ -7,7 +7,7 @@
 [assembly: AssemblyDescription("Sample console app Cisco source filter")]
 [assembly: AssemblyVersion("1.0.2.0")]
 [assembly: AssemblyFileVersion("1.0.2.0")]
-[assembly: AssemblyCompany("Schneider Electric")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("CiscoFilter")]
 [assembly: AssemblyCopyright("Copyright 2011")]
 [assembly: AssemblyTrademark("")]

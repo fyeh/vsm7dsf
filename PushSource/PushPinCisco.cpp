@@ -252,9 +252,8 @@ int CPushPinCisco::QueryVsom(TransportUrl * url)
 		{
 				Cisco::PSBU::VSOMWebService::device ^camera =(Cisco::PSBU::VSOMWebService::device^)cameraRefList->items[0];
 				                
-			HelperLib::TraceHelper::WriteDebug(System::String::Format("Camera: {0} @ {1}, States: {2}/{3}/{4}", 
-				camera->name, 
-				camera->deviceAccess->hostname_ip, 
+			HelperLib::TraceHelper::WriteDebug(System::String::Format("Camera: {0}, States: {1}/{2}/{3}", 
+				camera->alternateId, 
 				camera->adminState, 
 				camera->operState, 
 				camera->model));
@@ -412,9 +411,9 @@ bool CPushPinCisco::ProcessVideo(IMediaSample *pSample)
 		if(m_lostFrameBufferCount>count)
 		{
 			TRACE_WARN("Lost frame count (%d) over limit {%d). Restarting video",m_lostFrameBufferCount, count );
-			memcpy(pData,0, bufferSize);
-			m_streamMedia->rtspClientPlayStream(
-				((CPushSourceCisco*)this->m_pFilter)->m_transportUrl->get_RtspUrl());
+			memset(pData,0, bufferSize);
+			TRACE_INFO("memset(pData, 0, bufferSize) succeeded." );
+			// m_streamMedia->rtspClientPlayStream( ((CPushSourceCisco*)this->m_pFilter)->m_transportUrl->get_RtspUrl());
 			m_lostFrameBufferCount=0;
 		}
 		m_lostFrameBufferCount++;

@@ -78,7 +78,7 @@
       <AdditionalDependencies>LiveProxy.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <OutputFile>$(OutDir)CiscoSource.ax</OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)Cisco Source Filter\Common\libs;$(SolutionDir)ffmpeg\lib;$(SolutionDir)live\lib;$(SolutionDir)LiveProxy\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Cisco Source Filter\Common\libs;$(SolutionDir)ffmpeg\lib;$(SolutionDir)live\lib;$(SolutionDir)LiveProxy\bin\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <ModuleDefinitionFile>PushSource.def</ModuleDefinitionFile>
       <ForceSymbolReferences>__DllMainCRTStartup%4012;%(ForceSymbolReferences)</ForceSymbolReferences>
@@ -97,7 +97,7 @@
       <Command>regsvr32 "$(OutDir)CiscoSource.ax" /s</Command>
     </PostBuildEvent>
     <PreLinkEvent>
-      <Command>copy "$(SolutionDir)LiveProxy\bin\*.dll" "$(OutDir)"</Command>
+      <Command>copy "$(SolutionDir)LiveProxy\bin\Debug\*.dll" "$(OutDir)"</Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,7 +117,7 @@
       <RegisterOutput>true</RegisterOutput>
       <AdditionalDependencies>LiveProxy.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)CiscoSource.ax</OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)Cisco Source Filter\Common\libs;$(SolutionDir)ffmpeg\lib;$(SolutionDir)live\lib;$(SolutionDir)LiveProxy\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Cisco Source Filter\Common\libs;$(SolutionDir)ffmpeg\lib;$(SolutionDir)live\lib;$(SolutionDir)LiveProxy\bin\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <ModuleDefinitionFile>PushSource.def</ModuleDefinitionFile>
       <ForceSymbolReferences>__DllMainCRTStartup%4012;%(ForceSymbolReferences)</ForceSymbolReferences>
@@ -133,8 +133,7 @@
       <Command>regsvr32 "$(OutDir)CiscoSource.ax" /s</Command>
     </PostBuildEvent>
     <PreLinkEvent>
-      <Command>copy "$(SolutionDir)LiveProxy\bin\*.dll" "$(OutDir)"
-copy "$(SolutionDir)ffmpeg\bin\*.dll" "$(OutDir)"
+      <Command>copy "$(SolutionDir)LiveProxy\bin\Release\*.dll" "$(OutDir)"
 </Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>

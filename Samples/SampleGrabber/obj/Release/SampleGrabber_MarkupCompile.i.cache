@@ -4,7 +4,7 @@
 exe
 C#
 .cs
-C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Release\
+C:\Users\IBM_ADMIN\IBM\rationalsdp\workspace\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\obj\Release\
 SampleGrabber
 none
 false
@@ -13,7 +13,7 @@ TRACE
 6947585525
 1-1195191785
 19-1166150835
-17-292826483
+17719561698
 Controls\ControlPad.xaml;Controls\DefaultSettings.xaml;Controls\FilterStatus.xaml;Controls\Image.xaml;Controls\SystemStatus.xaml;Controls\TraceWindow.xaml;
 
 False

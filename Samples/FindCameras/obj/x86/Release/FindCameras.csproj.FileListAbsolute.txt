@@ -1,0 +1,57 @@
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\log4net.config
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.exe.config
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.exe
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.pdb
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\HelperLib.dll
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\VSOMWebService.dll
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\log4net.dll
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\HelperLib.pdb
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\VSOMWebService.XmlSerializers.dll
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.csprojResolveAssemblyReference.cache
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\View\MainWindow.baml
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\View\MainWindow.g.cs
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\App.g.cs
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras_MarkupCompile.cache
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.g.resources
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.Properties.Resources.resources
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.csproj.GenerateResource.Cache
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.exe
+C:\Data\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.pdb
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\log4net.config
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.exe.config
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.exe
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.pdb
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\HelperLib.dll
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\VSOMWebService.dll
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\log4net.dll
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\HelperLib.pdb
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\VSOMWebService.XmlSerializers.dll
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.csprojResolveAssemblyReference.cache
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\View\MainWindow.baml
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\View\MainWindow.g.cs
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\App.g.cs
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras_MarkupCompile.cache
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.g.resources
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.Properties.Resources.resources
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.csproj.GenerateResource.Cache
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.exe
+C:\Data\IVA_1.5\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.pdb
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\log4net.config
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.exe.config
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.exe
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\FindCameras.pdb
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\HelperLib.dll
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\VSOMWebService.dll
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\log4net.dll
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\HelperLib.pdb
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\bin\Release\VSOMWebService.XmlSerializers.dll
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.csprojResolveAssemblyReference.cache
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\View\MainWindow.baml
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\View\MainWindow.g.cs
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\App.g.cs
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras_MarkupCompile.cache
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.g.resources
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.Properties.Resources.resources
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.csproj.GenerateResource.Cache
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.exe
+C:\Data\IVA_1.5 - RTC current\Cisco\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\obj\x86\Release\FindCameras.pdb

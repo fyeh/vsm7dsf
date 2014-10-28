@@ -58,10 +58,10 @@ BEGIN
             VALUE "FileDescription", "Cisco Direct Show Source Filter"
             VALUE "FileVersion", "1.0.3.0"
             VALUE "InternalName", "CiscoFilter"
-            VALUE "LegalCopyright", "Copyright (C) 2011"
-            VALUE "LegalTrademarks", "SchneiderElectric"
-            VALUE "OriginalFilename", "PushSour.dll"
-            VALUE "ProductName", "PushSour Dynamic Link Library"
+            VALUE "LegalCopyright", "Copyright (C) 2013"
+            VALUE "LegalTrademarks", ""
+            VALUE "OriginalFilename", "CiscoSource.dll"
+            VALUE "ProductName", "CiscoSource Dynamic Link Library"
             VALUE "ProductVersion", "1.0.3.0"
         END
     END

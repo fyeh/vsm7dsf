@@ -1,9 +1,0 @@
-﻿Build started 7/11/2014 11:05:10 AM.
-     1>Project "C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\PushSource\pushsource.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Release\CiscoSource.lastbuildstate".
-     1>Done Building Project "C:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\ibm\DSFilter\Cisco Source Filter\PushSource\pushsource.vcxproj" (clean target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.10

@@ -125,6 +125,8 @@ namespace Cisco.PSBU.VSOMWebService
 
                     session sid = null;
                     AuthenticationInfo.CertValidationError = "Valid";
+                    try
+                    {
                     sid = AuthService.login(username, password, domain);
                     if (secure == true) { TraceHelper.WriteInfo(string.Format("Certificate validation: {0} \n", AuthenticationInfo.CertValidationError)); }
                     AuthenticationInfo.SessionId = sid.uid; // set global SessionId (will used in inspector's to overwrite HTTP header)
@@ -147,6 +149,11 @@ namespace Cisco.PSBU.VSOMWebService
                     DeviceCapabilityService = BaseService<DeviceCapabilityMgmtClient, IDeviceCapabilityMgmt>.GetClientService(AuthenticationInfo.HostName, "devicecapability/v1_0");
                     DeviceHealthMgmtService = BaseService<DeviceHealthMgmtClient, IDeviceHealthMgmt>.GetClientService(AuthenticationInfo.HostName, "devicehealth/v1_0");
                     TraceHelper.WriteInfo("All Services initialized \n");
+                    }
+                    catch (Exception ex)
+                    {
+                        ExceptionHelper.HandleException(ex);
+                    }
                 }
             }
         }

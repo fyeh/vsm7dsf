@@ -355,7 +355,7 @@ namespace HelperLib
                 if (ex is FileNotFoundException)
                     LogFileNotFoundException(ex as FileNotFoundException);
                 TraceHelper.LogLevel level = critical ? TraceHelper.LogLevel.Fatal : TraceHelper.LogLevel.Error;
-                sb.AppendLine("\r\n\r\n----------------- Excpetion -------------------");
+                sb.AppendLine("\r\n\r\n----------------- Exception -------------------");
                 sb.Append(GetMessageText(ex, userMessage));
                 if (critical)
                     sb.Append(GetModules());
@@ -502,7 +502,7 @@ namespace HelperLib
         private static string htmlErrorMessage = "" +
                                                  "<html>" +
                                                  "<head>" +
-                                                 "<title>Excpetion Handler</title>" +
+                                                 "<title>Exception Handler</title>" +
                                                  "</head>" +
                                                  "<body>" +
                                                  "<table>" +
@@ -532,7 +532,7 @@ namespace HelperLib
         #region TXT_Error_Message
 
         private static string txtErrorMessage = "" +
-                                                "Excpetion Handler\r\n" +
+                                                "Exception Handler\r\n" +
                                                 "\r\n" +
                                                 "Application:      {0}\r\n" +
                                                 "Version:          {1}\r\n" +
