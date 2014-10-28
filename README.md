@@ -28,11 +28,13 @@ Cisco VSM 7 SDK - https://developer.cisco.com/fileMedia/download/2b462c5c-8f5a-4
       VSOMWebService.XmlSerializers.dll
     
   
-Directshowlib - http://directshownet.sourceforge.net/
-  .NET access to DirectShow Used by Samples
-  
-Log4net - http://logging.apache.org/log4net/
-  Logging libraries Used by Samples
+Other Libraries:
+
+  These will be inlcuded in the releases of this project
+      Directshowlib - http://directshownet.sourceforge.net/
+        .NET access to DirectShow Used by Samples
+      Log4net - http://logging.apache.org/log4net/
+        Logging libraries Used by Samples
   
 Project Contents
 
