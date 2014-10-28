@@ -9,14 +9,16 @@ Description
   
 Pre-Req's
 
-LiveProxy - https://github.com/dhorth/LiveProxy
-  Provides a single dynamically linked library that combines the functions of Live555 and FFMPeg.
+LiveProxy - https://github.com/fyeh/LiveProxy/releases
+  Provides all required supporting libraries in a convenient package. 
   
-  ffMpeg - http://ffmpeg.zeranoe.com/builds/
-    Codecs used by the Filter
+  Other Supporting libraries included in LiveProxy:
   
-  live555 - http://www.live555.com/liveMedia/
-    Support for RTSP
+    ffMpeg - http://ffmpeg.zeranoe.com/builds/
+      Codecs used by the Filter
+      
+    live555 - http://www.live555.com/liveMedia/
+      Support for RTSP
     
 Cisco VSM 7 SDK - https://developer.cisco.com/site/networking/security/physical-security/documentation/index.gsp
   Provides libraries used to interface with Cisco VSM 7 Web Services
