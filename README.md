@@ -23,8 +23,9 @@ LiveProxy - https://github.com/fyeh/LiveProxy/releases
 Cisco VSM 7 SDK - https://developer.cisco.com/fileMedia/download/2b462c5c-8f5a-49d2-892c-4c87edfc6b37
 
   Provides libraries used to interface with Cisco VSM 7 Web Services. The two required dll's are:
-    VSOMWebService.dll
-    VSOMWebService.XmlSerializers.dll
+  
+  -  VSOMWebService.dll
+  -  VSOMWebService.XmlSerializers.dll
   
 Directshowlib - http://directshownet.sourceforge.net/
   .NET access to DirectShow Used by Samples
