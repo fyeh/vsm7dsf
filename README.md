@@ -24,7 +24,7 @@ Cisco VSM 7.0.1 SDK
 
     Provides lilbraries used to interface with Cisco Web Services. The required dll's are:
     
-    The Cisco SDK redistributables is available at
+    The Cisco SDK redistributables are available at
         http://solutionpartner.cisco.com/web/physical-security/documentation
     1. Download: "VSM 7.0.1 SDK with Examples"
     2. Unzip: VSM 7.0.1 SDK with Examples.zip
