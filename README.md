@@ -20,12 +20,17 @@ LiveProxy - https://github.com/fyeh/LiveProxy/releases
     live555 - http://www.live555.com/liveMedia/
       Support for RTSP
     
-Cisco VSM 7 SDK - https://developer.cisco.com/fileMedia/download/2b462c5c-8f5a-49d2-892c-4c87edfc6b37
+Cisco VSM 7.0.1 SDK
 
     Provides lilbraries used to interface with Cisco Web Services. The required dll's are:
-      
-      VSOMWebService.dll
-      VSOMWebService.XmlSerializers.dll
+    
+    The Cisco SDK redistributables is available at
+        http://solutionpartner.cisco.com/web/physical-security/documentation
+    1. Download: "VSM 7.0.1 SDK with Examples"
+    2. Unzip: VSM 7.0.1 SDK with Examples.zip
+    3. Find in: VSM7.0.1SDK\WebServicesDLLs
+        VSOMWebService.dll
+        VSOMWebService.XmlSerializers.dll
     
   
 Other Libraries:
