@@ -60,7 +60,8 @@ Project Contents
 
 Building
 
-  Build LiveProxy first the build Cisco DS Filter
+  Build LiveProxy first then build Cisco DS Filter. Do this for whichever configuration (Debug or Release) you are building for. 
+  IE build Liveproxy for Debug then Cisco DS Filter for Debug. When you are ready to release, build LiveProxy for Release then Cisco DS Filter for Release.
   
 Using
 
