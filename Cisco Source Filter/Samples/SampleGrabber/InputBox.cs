@@ -1,0 +1,94 @@
+﻿// IBM Confidential
+//
+// OCO Source Material
+//
+// 5725H94
+//
+// (C) Copyright IBM Corp. 2005,2006
+//
+// The source code for this program is not published or otherwise divested
+// of its trade secrets, irrespective of what has been deposited with the
+// U. S. Copyright Office.
+//
+// US Government Users Restricted Rights - Use, duplication or
+// disclosure restricted by GSA ADP Schedule Contract with
+// IBM Corp.
+
+using System;
+using System.IO;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace SampleGrabber
+{
+    /// <summary>
+    /// A dialog box to select the Ciscosource url.  The combo
+    /// box uses and auto complete source and saves all entries
+    /// in the camera.dat file in the application directory.
+    /// </summary>
+    public partial class InputBox : Form
+    {
+        //The list of cameras
+        private AutoCompleteStringCollection urlList;
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        public InputBox()
+        {
+            urlList=new AutoCompleteStringCollection();
+            InitializeComponent();
+        }
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Static helper/access method 
+        /// </summary>
+        /// <returns>Ciscosource url</returns>
+        public static string GetUrl()
+        {
+            var dlg = new InputBox();
+            dlg.ShowDialog();
+
+            if (dlg.DialogResult == DialogResult.OK)
+            {
+                if (!dlg.urlList.Contains(dlg.url.Text))
+                {
+                    dlg.urlList.Add(dlg.url.Text);
+                    var urlList = (from object line in dlg.urlList select line.ToString()).ToList();
+                    File.WriteAllLines("camera.dat",urlList.ToArray());
+                }
+
+                return dlg.url.Text;
+            }
+            return string.Empty;
+        }
+
+        /// <summary>
+        /// Load our autocomplete data store
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void InputBox_Load(object sender, EventArgs e)
+        {
+            if(File.Exists("camera.dat"))
+            {
+                foreach (string camera in File.ReadAllLines("camera.dat"))
+                {
+                    url.Items.Add(camera);
+                    urlList.Add(camera);
+                }
+            }
+            url.AutoCompleteCustomSource = urlList;
+        }
+    }
+}
