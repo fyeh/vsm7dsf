@@ -1,0 +1,20 @@
+﻿SampleGrabber
+
+
+exe
+C#
+.cs
+C:\Users\IBM_ADMIN\Documents\GitHub\vsm7dsf\Cisco Source Filter\Samples\SampleGrabber\obj\Release\
+SampleGrabber
+none
+false
+TRACE
+
+6947585525
+1-1195191785
+19-1166150835
+17262569195
+Controls\ControlPad.xaml;Controls\DefaultSettings.xaml;Controls\FilterStatus.xaml;Controls\Image.xaml;Controls\SystemStatus.xaml;Controls\TraceWindow.xaml;
+
+True
+

@@ -1,0 +1,302 @@
+2014-12-11 14:55:34,528; FindCameras.ViewModel.ViewModel; 3; INFO ; Starting Load Camera Server: ciscovsm7 User: admin
+2014-12-11 14:55:34,900; Cisco.PSBU.VSOMWebService.VsomServices; 3; INFO ; Start Services initialization, secure = True
+2014-12-11 14:55:37,429; Cisco.PSBU.VSOMWebService.VsomServices; 3; INFO ; Certificate validation: Valid 
+
+2014-12-11 14:55:37,431; Cisco.PSBU.VSOMWebService.VsomServices; 3; INFO ; Login sessionID=ISM868a191f-1e27-4cb7-9229-f798c1010afb 
+
+2014-12-11 14:55:38,092; Cisco.PSBU.VSOMWebService.VsomServices; 3; INFO ; All Services initialized 
+
+2014-12-11 14:55:38,093; FindCameras.ViewModel.ViewModel; 3; INFO ; Authenicated. Loading Cameras
+2014-12-11 14:55:38,094; FindCameras.ViewModel.ViewModel; 3; INFO ; Walking Cameras
+2014-12-11 14:55:40,566; HelperLib.CameraSupport; 3; DEBUG; Camera: cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210 @ 9.45.95.32, States: enabled/ok/cisco_2600
+2014-12-11 14:55:40,567; HelperLib.CameraSupport; 3; DEBUG; Getting security token for cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210
+2014-12-11 14:55:42,521; HelperLib.CameraSupport; 3; DEBUG; Getting host ip for cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210
+2014-12-11 14:55:43,596; HelperLib.CameraSupport; 3; DEBUG; Camera: cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30 @ 9.45.95.33, States: enabled/ok/cisco_4500E
+2014-12-11 14:55:43,597; HelperLib.CameraSupport; 3; DEBUG; Getting security token for cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30
+2014-12-11 14:55:43,596; FindCameras.ViewModel.ViewModel; 1; INFO ; Adding Camera cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210
+2014-12-11 14:55:43,600; FindCameras.Model.CiscoCamera; 4; INFO ; Trying to get thumbnail for cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210
+2014-12-11 14:55:44,140; HelperLib.ExceptionHelper; 4; ERROR; 
+
+----------------- Exception -------------------
+Exception Handler
+
+Application:      FindCameras
+Version:          0.1.0.0
+Date:             11/12/2014 14:55:44
+Computer name:    ADMINIB-N8P3I32
+User name:        Frank Yeh
+OS:               Microsoft Windows NT 6.1.7601 Service Pack 1
+Culture:          en-US
+Resolution:       {Width=1920, Height=1080}
+System up time:   00:00:00
+App up time:      0.430257943333333
+Total memory:     15950Mb
+Available memory: 7867Mb
+User Message:     
+
+
+---------------------------------------
+Exception Details
+	Message
+			No imaging component suitable to complete this operation was found.
+
+	Types
+			System.NotSupportedException
+
+	Call Stack
+			c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\Model\CiscoCamera.cs:line 246
+		    at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+		    at System.Windows.Media.Imaging.BitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, Guid expectedClsId)
+		    at System.Windows.Media.Imaging.JpegBitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+		    at FindCameras.Model.CiscoCamera.GetThumbnail()
+
+	Target
+			SetupDecoderFromUriOrStream
+
+------------------------------------------------------------------------------
+
+		Message
+				Exception from HRESULT: 0x88982F50
+
+		Types
+				System.Runtime.InteropServices.COMException
+
+		Call Stack
+				N/A
+
+		Target
+				N/A
+
+------------------------------------------------------------------------------
+
+
+----------------------------------------------
+
+
+
+2014-12-11 14:55:44,141; FindCameras.Model.CiscoCamera; 4; INFO ; Exception occurred in GetThumbnail(): System.NotSupportedException: No imaging component suitable to complete this operation was found. ---> System.Runtime.InteropServices.COMException: Exception from HRESULT: 0x88982F50
+   --- End of inner exception stack trace ---
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, Guid expectedClsId)
+   at System.Windows.Media.Imaging.JpegBitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+   at FindCameras.Model.CiscoCamera.GetThumbnail() in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\Model\CiscoCamera.cs:line 246
+2014-12-11 14:55:44,177; HelperLib.CameraSupport; 3; DEBUG; Getting host ip for cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30
+2014-12-11 14:55:44,664; FindCameras.ViewModel.ViewModel; 1; INFO ; Adding Camera cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30
+2014-12-11 14:55:44,665; FindCameras.Model.CiscoCamera; 8; INFO ; Trying to get thumbnail for cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30
+2014-12-11 14:55:44,665; FindCameras.ViewModel.ViewModel; 1; INFO ; Found last camera
+2014-12-11 14:55:45,140; HelperLib.ExceptionHelper; 8; ERROR; 
+
+----------------- Exception -------------------
+Exception Handler
+
+Application:      FindCameras
+Version:          0.1.0.0
+Date:             11/12/2014 14:55:45
+Computer name:    ADMINIB-N8P3I32
+User name:        Frank Yeh
+OS:               Microsoft Windows NT 6.1.7601 Service Pack 1
+Culture:          en-US
+Resolution:       {Width=1920, Height=1080}
+System up time:   00:00:00
+App up time:      0.44799229
+Total memory:     15950Mb
+Available memory: 7867Mb
+User Message:     
+
+
+---------------------------------------
+Exception Details
+	Message
+			No imaging component suitable to complete this operation was found.
+
+	Types
+			System.NotSupportedException
+
+	Call Stack
+			c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\Model\CiscoCamera.cs:line 246
+		    at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+		    at System.Windows.Media.Imaging.BitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, Guid expectedClsId)
+		    at System.Windows.Media.Imaging.JpegBitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+		    at FindCameras.Model.CiscoCamera.GetThumbnail()
+
+	Target
+			SetupDecoderFromUriOrStream
+
+------------------------------------------------------------------------------
+
+		Message
+				Exception from HRESULT: 0x88982F50
+
+		Types
+				System.Runtime.InteropServices.COMException
+
+		Call Stack
+				N/A
+
+		Target
+				N/A
+
+------------------------------------------------------------------------------
+
+
+----------------------------------------------
+
+
+
+2014-12-11 14:55:45,141; FindCameras.Model.CiscoCamera; 8; INFO ; Exception occurred in GetThumbnail(): System.NotSupportedException: No imaging component suitable to complete this operation was found. ---> System.Runtime.InteropServices.COMException: Exception from HRESULT: 0x88982F50
+   --- End of inner exception stack trace ---
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, Guid expectedClsId)
+   at System.Windows.Media.Imaging.JpegBitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+   at FindCameras.Model.CiscoCamera.GetThumbnail() in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\Model\CiscoCamera.cs:line 246
+2014-12-11 14:57:43,863; FindCameras.ViewModel.ViewModel; 3; INFO ; Starting Load Camera Server: ciscovsm7 User: admin
+2014-12-11 14:57:43,899; Cisco.PSBU.VSOMWebService.VsomServices; 3; INFO ; Start Services initialization, secure = True
+2014-12-11 14:57:45,143; Cisco.PSBU.VSOMWebService.VsomServices; 3; INFO ; Certificate validation: Valid 
+
+2014-12-11 14:57:45,144; Cisco.PSBU.VSOMWebService.VsomServices; 3; INFO ; Login sessionID=ISMdd4bfc0d-0eb9-4629-8ea1-6ff74fe20258 
+
+2014-12-11 14:57:45,774; Cisco.PSBU.VSOMWebService.VsomServices; 3; INFO ; All Services initialized 
+
+2014-12-11 14:57:45,775; FindCameras.ViewModel.ViewModel; 3; INFO ; Authenicated. Loading Cameras
+2014-12-11 14:57:45,779; FindCameras.ViewModel.ViewModel; 3; INFO ; Walking Cameras
+2014-12-11 14:57:47,454; HelperLib.CameraSupport; 3; DEBUG; Camera: cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210 @ 9.45.95.32, States: enabled/ok/cisco_2600
+2014-12-11 14:57:47,455; HelperLib.CameraSupport; 3; DEBUG; Getting security token for cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210
+2014-12-11 14:57:48,079; HelperLib.CameraSupport; 3; DEBUG; Getting host ip for cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210
+2014-12-11 14:57:50,125; HelperLib.CameraSupport; 3; DEBUG; Camera: cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30 @ 9.45.95.33, States: enabled/ok/cisco_4500E
+2014-12-11 14:57:50,125; FindCameras.ViewModel.ViewModel; 1; INFO ; Adding Camera cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210
+2014-12-11 14:57:50,125; HelperLib.CameraSupport; 3; DEBUG; Getting security token for cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30
+2014-12-11 14:57:50,130; FindCameras.Model.CiscoCamera; 4; INFO ; Trying to get thumbnail for cisco_2600_9.45.95.32_34d0c17a-2701-4f70-b9f8-3e61b6df4210
+2014-12-11 14:57:50,585; HelperLib.ExceptionHelper; 4; ERROR; 
+
+----------------- Exception -------------------
+Exception Handler
+
+Application:      FindCameras
+Version:          0.1.0.0
+Date:             11/12/2014 14:57:50
+Computer name:    ADMINIB-N8P3I32
+User name:        Frank Yeh
+OS:               Microsoft Windows NT 6.1.7601 Service Pack 1
+Culture:          en-US
+Resolution:       {Width=1920, Height=1080}
+System up time:   00:00:00
+App up time:      0.146658388333333
+Total memory:     15950Mb
+Available memory: 7865Mb
+User Message:     
+
+
+---------------------------------------
+Exception Details
+	Message
+			No imaging component suitable to complete this operation was found.
+
+	Types
+			System.NotSupportedException
+
+	Call Stack
+			c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\Model\CiscoCamera.cs:line 246
+		    at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+		    at System.Windows.Media.Imaging.BitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, Guid expectedClsId)
+		    at System.Windows.Media.Imaging.JpegBitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+		    at FindCameras.Model.CiscoCamera.GetThumbnail()
+
+	Target
+			SetupDecoderFromUriOrStream
+
+------------------------------------------------------------------------------
+
+		Message
+				Exception from HRESULT: 0x88982F50
+
+		Types
+				System.Runtime.InteropServices.COMException
+
+		Call Stack
+				N/A
+
+		Target
+				N/A
+
+------------------------------------------------------------------------------
+
+
+----------------------------------------------
+
+
+
+2014-12-11 14:57:50,588; FindCameras.Model.CiscoCamera; 4; INFO ; Exception occurred in GetThumbnail(): System.NotSupportedException: No imaging component suitable to complete this operation was found. ---> System.Runtime.InteropServices.COMException: Exception from HRESULT: 0x88982F50
+   --- End of inner exception stack trace ---
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, Guid expectedClsId)
+   at System.Windows.Media.Imaging.JpegBitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+   at FindCameras.Model.CiscoCamera.GetThumbnail() in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\Model\CiscoCamera.cs:line 246
+2014-12-11 14:57:50,614; HelperLib.CameraSupport; 3; DEBUG; Getting host ip for cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30
+2014-12-11 14:57:51,225; FindCameras.ViewModel.ViewModel; 1; INFO ; Adding Camera cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30
+2014-12-11 14:57:51,226; FindCameras.Model.CiscoCamera; 8; INFO ; Trying to get thumbnail for cisco_4500E_9.45.95.33_d9d33cd5-5ac7-4e53-8706-1196bffc5b30
+2014-12-11 14:57:51,226; FindCameras.ViewModel.ViewModel; 1; INFO ; Found last camera
+2014-12-11 14:57:51,837; HelperLib.ExceptionHelper; 8; ERROR; 
+
+----------------- Exception -------------------
+Exception Handler
+
+Application:      FindCameras
+Version:          0.1.0.0
+Date:             11/12/2014 14:57:51
+Computer name:    ADMINIB-N8P3I32
+User name:        Frank Yeh
+OS:               Microsoft Windows NT 6.1.7601 Service Pack 1
+Culture:          en-US
+Resolution:       {Width=1920, Height=1080}
+System up time:   00:00:00
+App up time:      0.167592918333333
+Total memory:     15950Mb
+Available memory: 7865Mb
+User Message:     
+
+
+---------------------------------------
+Exception Details
+	Message
+			No imaging component suitable to complete this operation was found.
+
+	Types
+			System.NotSupportedException
+
+	Call Stack
+			c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\Model\CiscoCamera.cs:line 246
+		    at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+		    at System.Windows.Media.Imaging.BitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, Guid expectedClsId)
+		    at System.Windows.Media.Imaging.JpegBitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+		    at FindCameras.Model.CiscoCamera.GetThumbnail()
+
+	Target
+			SetupDecoderFromUriOrStream
+
+------------------------------------------------------------------------------
+
+		Message
+				Exception from HRESULT: 0x88982F50
+
+		Types
+				System.Runtime.InteropServices.COMException
+
+		Call Stack
+				N/A
+
+		Target
+				N/A
+
+------------------------------------------------------------------------------
+
+
+----------------------------------------------
+
+
+
+2014-12-11 14:57:51,838; FindCameras.Model.CiscoCamera; 8; INFO ; Exception occurred in GetThumbnail(): System.NotSupportedException: No imaging component suitable to complete this operation was found. ---> System.Runtime.InteropServices.COMException: Exception from HRESULT: 0x88982F50
+   --- End of inner exception stack trace ---
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, Guid expectedClsId)
+   at System.Windows.Media.Imaging.JpegBitmapDecoder..ctor(Stream bitmapStream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption)
+   at FindCameras.Model.CiscoCamera.GetThumbnail() in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\FindCameras\Model\CiscoCamera.cs:line 246

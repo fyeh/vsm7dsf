@@ -1,0 +1,141 @@
+2014-12-11 14:54:15,082; HelperLib.ExceptionHelper; 6; ERROR; 
+
+----------------- Exception -------------------
+Exception Handler
+
+Application:      CiscoFilter
+Version:          1.0.2.0
+Date:             11/12/2014 14:54:14
+Computer name:    ADMINIB-N8P3I32
+User name:        Frank Yeh
+OS:               Microsoft Windows NT 6.1.7601 Service Pack 1
+Culture:          en-US
+Resolution:       {Width=1920, Height=1080}
+System up time:   00:00:00
+App up time:      0.480994178333333
+Total memory:     15950Mb
+Available memory: 7847Mb
+User Message:     
+
+
+---------------------------------------
+Exception Details
+	Message
+			The source filter for this file could not be loaded.
+
+	Types
+			System.Runtime.InteropServices.COMException
+
+	Call Stack
+			c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 152
+		    at DirectShowLib.DsError.ThrowExceptionForHR(Int32 hr)
+		    at SampleGrabber.ViewModel.CheckHr(Int32 hr, String msg) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 982
+		    at SampleGrabber.ViewModel.CreateSourceFilter(IGraphBuilder pGraph, String url) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 918
+		    at SampleGrabber.ViewModel.BuildGraph(IGraphBuilder pGraph, String srcFile1) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 782
+		    at SampleGrabber.ViewModel.StartAsync(Object arg)
+
+	Target
+			ThrowExceptionForHR
+
+------------------------------------------------------------------------------
+
+
+----------------------------------------------
+
+
+
+2014-12-11 14:56:57,545; HelperLib.ExceptionHelper; 11; ERROR; File Name: 
+2014-12-11 14:56:57,558; HelperLib.ExceptionHelper; 11; ERROR; 
+
+----------------- Exception -------------------
+Exception Handler
+
+Application:      CiscoFilter
+Version:          1.0.2.0
+Date:             11/12/2014 14:56:57
+Computer name:    ADMINIB-N8P3I32
+User name:        Frank Yeh
+OS:               Microsoft Windows NT 6.1.7601 Service Pack 1
+Culture:          en-US
+Resolution:       {Width=1920, Height=1080}
+System up time:   00:00:00
+App up time:      2.24626181166667
+Total memory:     15950Mb
+Available memory: 7803Mb
+User Message:     
+
+
+---------------------------------------
+Exception Details
+	Message
+			Exception from HRESULT: 0x800C000D
+
+	Types
+			System.IO.FileNotFoundException
+
+	Call Stack
+			c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 152
+		    at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+		    at System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(Int32 errorCode)
+		    at DirectShowLib.DsError.ThrowExceptionForHR(Int32 hr)
+		    at SampleGrabber.ViewModel.CheckHr(Int32 hr, String msg) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 982
+		    at SampleGrabber.ViewModel.CreateSourceFilter(IGraphBuilder pGraph, String url) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 918
+		    at SampleGrabber.ViewModel.BuildGraph(IGraphBuilder pGraph, String srcFile1) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 782
+		    at SampleGrabber.ViewModel.StartAsync(Object arg)
+
+	Target
+			ThrowExceptionForHRInternal
+
+------------------------------------------------------------------------------
+
+
+----------------------------------------------
+
+
+
+2014-12-11 14:58:22,319; HelperLib.ExceptionHelper; 11; ERROR; 
+
+----------------- Exception -------------------
+Exception Handler
+
+Application:      CiscoFilter
+Version:          1.0.2.0
+Date:             11/12/2014 14:58:22
+Computer name:    ADMINIB-N8P3I32
+User name:        Frank Yeh
+OS:               Microsoft Windows NT 6.1.7601 Service Pack 1
+Culture:          en-US
+Resolution:       {Width=1920, Height=1080}
+System up time:   00:00:00
+App up time:      0.773560911666667
+Total memory:     15950Mb
+Available memory: 7722Mb
+User Message:     
+
+
+---------------------------------------
+Exception Details
+	Message
+			The source filter for this file could not be loaded.
+
+	Types
+			System.Runtime.InteropServices.COMException
+
+	Call Stack
+			c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 152
+		    at DirectShowLib.DsError.ThrowExceptionForHR(Int32 hr)
+		    at SampleGrabber.ViewModel.CheckHr(Int32 hr, String msg) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 982
+		    at SampleGrabber.ViewModel.CreateSourceFilter(IGraphBuilder pGraph, String url) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 918
+		    at SampleGrabber.ViewModel.BuildGraph(IGraphBuilder pGraph, String srcFile1) in c:\Data\MyProjects\DVS\Partners\Cisco\VSM7Integration\Code_n_Doc\CiscoVSM7_DSF_Filter\DSFilter\Cisco Source Filter\Samples\SampleGrabber\ViewModel.cs:line 782
+		    at SampleGrabber.ViewModel.StartAsync(Object arg)
+
+	Target
+			ThrowExceptionForHR
+
+------------------------------------------------------------------------------
+
+
+----------------------------------------------
+
+
+
